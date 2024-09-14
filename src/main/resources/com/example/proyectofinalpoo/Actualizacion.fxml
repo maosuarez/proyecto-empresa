@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="330.0" prefWidth="400.0" style="-fx-background-color: #353831;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.proyectofinalpoo.Actualizacion">
+   <children>
+      <GridPane layoutX="16.0" layoutY="46.0" prefHeight="238.0" prefWidth="371.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label alignment="CENTER" prefHeight="18.0" prefWidth="90.0" text="Nombre:" textFill="#cbd3fa" />
+            <Label alignment="CENTER" layoutX="10.0" layoutY="31.0" prefHeight="18.0" prefWidth="90.0" text="Puesto:" textFill="#cbd3fa" GridPane.rowIndex="2" />
+            <Label alignment="CENTER" layoutX="10.0" layoutY="87.0" prefHeight="18.0" prefWidth="90.0" text="Edad:" textFill="#cbd3fa" GridPane.rowIndex="1" />
+            <Label alignment="CENTER" layoutX="10.0" layoutY="52.0" prefHeight="18.0" prefWidth="90.0" text="Telefono:" textFill="#cbd3fa" GridPane.rowIndex="3" />
+            <Label alignment="CENTER" layoutX="10.0" layoutY="224.0" prefHeight="18.0" prefWidth="90.0" text="Contraseña:" textFill="#cbd3fa" GridPane.columnIndex="2" />
+            <Label alignment="CENTER" layoutX="196.0" layoutY="18.0" prefHeight="53.0" prefWidth="90.0" text="Confirmacion:" textFill="#cbd3fa" wrapText="true" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Label alignment="CENTER" layoutX="196.0" layoutY="52.0" prefHeight="18.0" prefWidth="90.0" text="Direccion:" textFill="#cbd3fa" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Label alignment="CENTER" layoutX="196.0" layoutY="87.0" prefHeight="18.0" prefWidth="90.0" text="Salario:" textFill="#cbd3fa" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <Label fx:id="Puesto" alignment="CENTER" layoutX="10.0" layoutY="31.0" prefHeight="29.0" prefWidth="90.0" style="-fx-background-color: #A3B18A;" textFill="#344e41" textOverrun="CENTER_ELLIPSIS" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label fx:id="Salario" alignment="CENTER" layoutX="103.0" layoutY="90.0" prefHeight="27.0" prefWidth="90.0" style="-fx-background-color: #A3B18A;" textFill="#344e41" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            <TextField fx:id="Contra" prefHeight="26.0" prefWidth="0.0" style="-fx-background-color: #A3B18A;" GridPane.columnIndex="3" />
+            <TextField fx:id="ConfiContra" layoutX="289.0" layoutY="27.0" prefHeight="26.0" prefWidth="0.0" style="-fx-background-color: #A3B18A;" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <TextField fx:id="Nombre" prefHeight="26.0" prefWidth="18.0" style="-fx-background-color: #A3B18A;" GridPane.columnIndex="1" />
+            <TextField fx:id="Edad" style="-fx-background-color: #A3B18A;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="Telefono" style="-fx-background-color: #A3B18A;" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="Direccion" style="-fx-background-color: #A3B18A;" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+         </children>
+      </GridPane>
+      <Pane layoutX="3.0" prefHeight="55.0" prefWidth="400.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="38.0" layoutY="5.0" prefHeight="17.0" prefWidth="307.0" text="Actualizacion Datos" textFill="#acd7ec" textOverrun="CENTER_ELLIPSIS">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Button fx:id="Salir" layoutX="78.0" layoutY="284.0" mnemonicParsing="false" onAction="#Salir" prefHeight="26.0" prefWidth="90.0" style="-fx-background-color: #414833;" text="Salir" textFill="#cbd3fa" />
+      <Button fx:id="Guardar" layoutX="238.0" layoutY="284.0" mnemonicParsing="false" onAction="#Guardar" prefHeight="26.0" prefWidth="90.0" style="-fx-background-color: #414833;" text="Guardar" textFill="#cbd3fa" />
+   </children>
+</AnchorPane>

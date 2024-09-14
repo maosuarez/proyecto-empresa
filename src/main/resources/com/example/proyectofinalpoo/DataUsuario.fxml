@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="marco" prefHeight="330.0" prefWidth="400.0" style="-fx-background-color: #40916C;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.proyectofinalpoo.DataUsuario">
+   <children>
+      <Pane layoutX="21.0" layoutY="17.0" prefHeight="296.0" prefWidth="358.0" style="-fx-background-color: #2D6A4F;">
+         <children>
+            <TextField fx:id="Nombre" layoutX="52.0" layoutY="31.0" prefHeight="25.0" prefWidth="250.0" style="-fx-background-color: #B7E4C7;" />
+            <TextField fx:id="Puesto" layoutX="52.0" layoutY="89.0" prefHeight="25.0" prefWidth="250.0" style="-fx-background-color: #B7E4C7;" />
+            <TextField fx:id="Edad" layoutX="52.0" layoutY="148.0" prefHeight="25.0" prefWidth="250.0" style="-fx-background-color: #B7E4C7;" />
+            <TextField fx:id="Salario" layoutX="52.0" layoutY="206.0" prefHeight="25.0" prefWidth="250.0" style="-fx-background-color: #B7E4C7;" />
+            <Label alignment="CENTER" layoutX="139.0" layoutY="4.0" prefHeight="17.0" prefWidth="81.0" style="-fx-background-color: #95D5B2;" text="Nombre">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="139.0" layoutY="62.0" prefHeight="20.0" prefWidth="81.0" style="-fx-background-color: #95D5B2;" text="Puesto">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="137.0" layoutY="120.0" prefHeight="17.0" prefWidth="81.0" style="-fx-background-color: #95D5B2;" text="Edad">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="139.0" layoutY="180.0" prefHeight="20.0" prefWidth="81.0" style="-fx-background-color: #95D5B2;" text="Salario">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="Salir" layoutX="52.0" layoutY="257.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="81.0" text="Salir" style="-fx-background-color: #95D5B2" onAction="#Salir"/>
+            <Button fx:id="Editar" layoutX="215.0" layoutY="257.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="81.0" text="Listo" style="-fx-background-color: #95D5B2" onAction="#Editar"/>
+         </children></Pane>
+   </children>
+</AnchorPane>

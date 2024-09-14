@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="330.0" prefWidth="403.0" style="-fx-background-color: #588157;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.proyectofinalpoo.Registro">
+    <children>
+        <GridPane alignment="CENTER" layoutX="16.0" layoutY="39.0" prefHeight="245.0" prefWidth="387.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <Pane prefHeight="200.0" prefWidth="200.0">
+                    <children>
+                        <Label layoutX="70.0" layoutY="7.0" text="Nombre:" textAlignment="JUSTIFY">
+                            <font>
+                                <Font size="14.0" />
+                            </font></Label>
+                    </children>
+                </Pane>
+                <Pane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
+                    <children>
+                        <Label layoutX="61.0" layoutY="7.0" text="Contraseña:">
+                            <font>
+                                <Font size="14.0" />
+                            </font></Label>
+                    </children>
+                </Pane>
+                <Pane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="2">
+                    <children>
+                        <Label layoutX="28.0" layoutY="4.0" text="Confirmar Contraseña:">
+                            <font>
+                                <Font size="14.0" />
+                            </font></Label>
+                    </children>
+                </Pane>
+                <Pane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="3">
+                    <children>
+                        <Label layoutX="80.0" layoutY="4.0" text="Edad:">
+                            <font>
+                                <Font size="14.0" />
+                            </font></Label>
+                    </children>
+                </Pane>
+                <Pane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="4">
+                    <children>
+                        <Label layoutX="73.0" layoutY="7.0" text="Genero:">
+                            <font>
+                                <Font size="14.0" />
+                            </font></Label>
+                    </children>
+                </Pane>
+                <Pane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="5">
+                    <children>
+                        <Label layoutX="67.0" layoutY="7.0" text="Direccion:">
+                            <font>
+                                <Font size="14.0" />
+                            </font></Label>
+                    </children>
+                </Pane>
+                <Pane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="6">
+                    <children>
+                        <Label layoutX="74.0" layoutY="7.0" text="Puesto:">
+                            <font>
+                                <Font size="14.0" />
+                            </font></Label>
+                    </children>
+                </Pane>
+                <Pane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="7">
+                    <children>
+                        <Label layoutX="59.0" layoutY="7.0" text="Telefono:">
+                            <font>
+                                <Font size="14.0" />
+                            </font></Label>
+                    </children>
+                </Pane>
+
+
+                <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1">
+                    <children>
+                        <TextField fx:id="NuevoNombre" layoutX="0.0" layoutY="0.0" promptText="Ingresa el Nombre" style="-fx-background-color: #DAD7CD;">
+                            <font>
+                                <Font size="14.0" />
+                            </font></TextField>
+                    </children>
+                </Pane>
+                <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                    <children>
+                        <TextField fx:id="NuevaContraseña" layoutX="0.0" layoutY="0.0" promptText="Ingresa la Contraseña" style="-fx-background-color: #DAD7CD;">
+                            <font>
+                                <Font size="14.0" />
+                            </font></TextField>
+                    </children>
+                </Pane>
+                <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                    <children>
+                        <TextField fx:id="ConfirmacionContraseña" layoutX="0.0" layoutY="0.0" promptText="Ingresa la Contraseña" style="-fx-background-color: #DAD7CD;">
+                            <font>
+                                <Font size="14.0" />
+                            </font></TextField>
+                    </children>
+                </Pane>
+                <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                    <children>
+                        <TextField fx:id="Edad" layoutX="0.0" layoutY="0.0" promptText="Ingresa Edad" style="-fx-background-color: #DAD7CD;">
+                            <font>
+                                <Font size="14.0" />
+                            </font></TextField>
+                    </children>
+                </Pane>
+                <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                    <RadioButton id="Male" fx:id="Male" layoutY="5" mnemonicParsing="false" text="Masculino" />
+                    <RadioButton id="Girl" fx:id="Female" layoutX="80" layoutY="5" mnemonicParsing="false" text="Femenino" />
+                </Pane>
+                <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                    <children>
+                        <TextField fx:id="Direccion" layoutX="0.0" layoutY="0.0" promptText="Ingresa Direccion" style="-fx-background-color: #DAD7CD;">
+                            <font>
+                                <Font size="14.0" />
+                            </font></TextField>
+                    </children>
+                </Pane>
+                <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                    <children>
+                        <TextField fx:id="Puesto" layoutX="0.0" layoutY="0.0" promptText="Ingresar Puesto" style="-fx-background-color: #DAD7CD;">
+                            <font>
+                                <Font size="14.0" />
+                            </font></TextField>
+                    </children>
+                </Pane>
+                <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="7">
+                    <children>
+                        <TextField fx:id="Telefono" layoutX="0.0" layoutY="0.0" promptText="Ingrese su Telefono" style="-fx-background-color: #DAD7CD;">
+                            <font>
+                                <Font size="14.0" />
+                            </font></TextField>
+                    </children>
+                </Pane>
+            </children>
+        </GridPane>
+        <Label alignment="CENTER" layoutX="82.0" layoutY="8.0" prefHeight="27.0" prefWidth="238.0" style="-fx-background-color: #588157;" text="Ingrese los siguientes Datos:">
+            <font>
+                <Font size="18.0" />
+            </font></Label>
+        <Button fx:id="SaveInfo" layoutX="88.0" layoutY="299.0" mnemonicParsing="false" onAction="#saveProfile" style="-fx-background-color: #3A5A40;" text="Registrarse" textAlignment="CENTER" textFill="#f2eeee" />
+        <Button fx:id="Salir" layoutX="244.0" layoutY="298.0" mnemonicParsing="false" onAction="#salir" prefHeight="26.0" prefWidth="76.0" style="-fx-background-color: #3A5A40;" text="Salir" textAlignment="CENTER" textFill="#f2eeee" />
+    </children>
+</AnchorPane>

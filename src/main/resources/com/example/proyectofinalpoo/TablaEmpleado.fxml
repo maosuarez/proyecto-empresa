@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="330.0" prefWidth="400.0" style="-fx-background-color: #588157;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.proyectofinalpoo.TablaEmpleado">
+    <children>
+        <TableView fx:id="Tabla" layoutX="11.0" layoutY="116.0" prefHeight="179.0" prefWidth="378.0" style="-fx-background-color: #dad7cd;">
+            <columns>
+                <TableColumn fx:id="ColumnaNombre" prefWidth="75.0" text="Nombre" />
+                <TableColumn fx:id="ColumnaPuesto" prefWidth="75.0" text="Puesto" />
+                <TableColumn fx:id="ColumnaEdad" prefWidth="75.0" text="Edad" />
+                <TableColumn fx:id="ColumnaGenero" prefWidth="75.0" text="Género" />
+                <TableColumn fx:id="ColumnaSalario" prefWidth="75.0" text="Salario" />
+            </columns>
+        </TableView>
+      <Pane layoutX="11.0" layoutY="5.0" prefHeight="106.0" prefWidth="378.0" style="-fx-background-color: #84dcc6;">
+         <children>
+            <ImageView fitHeight="106.0" fitWidth="153.0" pickOnBounds="true" preserveRatio="true">
+                 <image>
+                     <Image url="@Imagenes/ImagenUsuario1.png" />
+                 </image>
+             </ImageView>
+            <Label fx:id="Nombre" layoutX="106.0" layoutY="38.0" prefHeight="30.0" prefWidth="106.0" />
+            <Label fx:id="Puesto" layoutX="106.0" layoutY="8.0" prefHeight="30.0" prefWidth="106.0" />
+            <Label fx:id="Edad" layoutX="258.0" layoutY="8.0" prefHeight="30.0" prefWidth="106.0" />
+            <Label fx:id="Salario" layoutX="258.0" layoutY="38.0" prefHeight="30.0" prefWidth="106.0" />
+            <Label fx:id="Telefono" layoutX="106.0" layoutY="68.0" prefHeight="30.0" prefWidth="106.0" />
+            <Button fx:id="Modificar" onAction="#Modificar" layoutX="252.0" layoutY="71.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="106.0" style="-fx-background-color: #84dcc6; -fx-border-color: black;" text="Modificar">
+               <opaqueInsets>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </opaqueInsets>
+            </Button>
+         </children></Pane>
+      <Button fx:id="Salir" layoutX="125.0" layoutY="300.0" mnemonicParsing="false" onAction="#Salir" prefHeight="25.0" prefWidth="150.0" style="-fx-background-color: #84dcc6" text="Salir" />
+    </children>
+</AnchorPane>

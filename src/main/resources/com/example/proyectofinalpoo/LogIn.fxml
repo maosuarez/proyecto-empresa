@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="330.0" prefWidth="400.0" style="-fx-background-color: #353831;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.proyectofinalpoo.LogIn">
+
+  <children>
+    <VBox fx:id="vbox" alignment="CENTER" layoutX="48.0" layoutY="19.0" prefHeight="288.0" prefWidth="324.0" spacing="20.0" AnchorPane.leftAnchor="48.0" AnchorPane.rightAnchor="48.0">
+
+      <children>
+        <Label fx:id="welcomeText" style="-fx-font-family: Times New Roman;" text="Bienvenido" textAlignment="CENTER" textFill="#20fc8f">
+          <font>
+            <Font size="34.0" />
+          </font></Label>
+        <TextField fx:id="NombreUsuario" promptText="Nombre de Usuario" />
+        <PasswordField fx:id="Contraseña" promptText="Contraseña" />
+        <Pane prefHeight="77.0" prefWidth="324.0">
+          <children>
+            <Button fx:id="registerButton" layoutX="14.0" layoutY="14.0" onAction="#Registrer" prefHeight="50.0" prefWidth="119.0" style="-fx-background-color: #3F5E5A;" text="Registrarse" textFill="#20fc8f" />
+
+            <Button fx:id="loginButton" layoutX="191.0" layoutY="14.0" onAction="#LogIn" prefHeight="50.0" prefWidth="119.0" style="-fx-background-color: #3F5E5A;" text="Iniciar Sesión" textFill="#20fc8f" />
+
+          </children>
+        </Pane>
+      </children>
+    </VBox>
+  </children>
+</AnchorPane>

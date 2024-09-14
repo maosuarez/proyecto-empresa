@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="330.0" prefWidth="400.0" style="-fx-background-color: #588157;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.proyectofinalpoo.TablaJefe">
+   <children>
+      <TableView fx:id="Tabla" layoutX="11.0" layoutY="32.0" prefHeight="200.0" prefWidth="378.0" style="-fx-background-color: #dad7cd;">
+        <columns>
+            <TableColumn fx:id="ColumnaNombre" prefWidth="75.0" text="Nombre" />
+            <TableColumn fx:id="ColumnaPuesto" prefWidth="75.0" text="Puesto" />
+            <TableColumn fx:id="ColumnaEdad" prefWidth="75.0" text="Edad" />
+            <TableColumn fx:id="ColumnaGenero" prefWidth="75.0" text="Género" />
+            <TableColumn fx:id="ColumnaSalario" prefWidth="75.0" text="Salario" />
+        </columns>
+         <effect>
+            <Blend />
+         </effect>
+      </TableView>
+      <Button fx:id="Agregar" layoutX="20.0" layoutY="262.0" mnemonicParsing="false" onAction="#Agregar" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #a3b18a;" text="Agregar" />
+      <Button fx:id="Eliminar" layoutX="115.0" layoutY="263.0" mnemonicParsing="false" onAction="#Eliminar" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #a3b18a;" text="Eliminar" />
+      <Button fx:id="Editar" layoutX="210.0" layoutY="263.0" mnemonicParsing="false" onAction="#Editar" prefHeight="33.0" prefWidth="79.0" style="-fx-background-color: #a3b18a;" text="Editar" />
+       <Button fx:id="Salir" layoutX="305.0" layoutY="263.0" mnemonicParsing="false" onAction="#Salir" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #a3b18a;" text="Salir" />
+   </children>
+</AnchorPane>

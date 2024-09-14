@@ -1,0 +1,5 @@
+Mao|1234|19|Hombre|Calle22|jefe|3015717322|1.0
+Ale|asul|78|Hombre|lola|papa|78900654|40.0
+Luz|ValeHermosa|89|undefined|Calle 22|mama|undefined|0.0
+Axel|12345|28|Hombre|sabana|empleado|38743865|1.0
+Sara|Empleado|30|undefined|undefined|Empleada|undefined|0.0
